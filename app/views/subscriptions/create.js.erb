@@ -1,0 +1,8 @@
+$('#subscribe').val('Subscribe');
+<% unless @subscription.errors.any?  %>
+	$('.subscription').append("<div id='subscribe-message'>Thanks for email subscription.</div>");
+	setTimeout(function(){
+		$('#subscribe-message').fadeOut("slow");
+	}, 1000);
+	$('.subscription input.text').val('');
+<% end  %>

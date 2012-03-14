@@ -1,0 +1,9 @@
+$('#ajaxloader').hide();
+$('#partner_submit').text("I want to be Wholesale Partner");
+
+<% if @partner.errors.any? %>
+	$('.message').html("<div class='error'>Please enter lastname, firstname and email to complete your request.</div>").show();	
+<% else %>
+	$('#partner_form').hide();
+	$('#partnerform_cont').html("<div class='success'>Thanks for showing your interest. Our team member will be in touch with you soon.</div>");
+<% end %>

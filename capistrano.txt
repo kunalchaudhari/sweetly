@@ -1,0 +1,26 @@
+
+	Web server
+		- Apache
+
+	Database
+		- MySQL
+
+	Ruby
+		- 1.9.3
+	
+	Application server
+		- Unicorn
+	
+	SCM
+		- Git
+	
+
+Tasks
+
+- Read about passphrase and ssh
+- Create deploy user
+- Install 1.9.3 on server
+- Decide directory for our app
+- Setup database
+- Upload code Github
+		

@@ -1,0 +1,184 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#designer-display{
+  position: relative;      
+  @include center-980;
+  
+  img.designer-image {
+    padding-top: 20px;
+  }
+  
+  .quote-container{
+    
+    @include rounded-corners(5px);        
+    position: absolute; 
+    left: 308px; 
+    top: 70px; 
+    width: 600px;
+    border: solid 1px #E2E2E2;
+    padding: 10px;
+    background-color: #F2F2F2;
+    line-height: 23px;
+    text-align: left;
+    
+    .quote{
+      font-style: italic;
+      
+      cite{
+        float: right;
+        padding:{
+          right: 10px;
+          top: 10px;
+        }
+        font-size: 11px;
+        
+        span {
+          color: #666;
+        }
+      }
+
+      .comment-arrow {
+        position: absolute; 
+        left: 20px;
+        top: 99px;
+      }
+    }  
+  }    
+
+  a.shop-button{
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    &:active{
+      top: 171px;
+    }
+  } 
+
+  ul {
+    position: absolute;
+    top: 232px;
+    left: 235px;
+    font-size: 12px;
+    
+    li {
+      float: left;
+      border-right: solid 1px #ccc;      
+      line-height: 13px;
+      a {
+        padding: 0 10px;
+        color: #370E0E;
+        &:hover{
+          color: lighten(#370E0E, 20%);
+        }
+      }
+    }
+    
+    li.last {
+      border-right: 0 none;
+    }
+  }
+}
+    
+#getinvolve {
+  width: 920px; 
+  margin: 50px auto;
+  
+  h1 {
+    text-align: center; 
+    margin-bottom: 30px; 
+    font: {
+      family: 'Cambo',serif; 
+      size: 35px;
+    }
+  }
+    
+  div.box {
+    @include box-shadows(0,0,15px,#e2e2e2);
+    @include rounded-corners(5px);
+    @include add-transition-box-shadows(0.5s,ease-out);
+    margin-right: 30px;
+    float: left; 
+    width: 284px;
+    padding: 20px 0px 15px 0px;
+    border: solid 1px #f9f9f9;
+    a{
+      color: #333;
+    }
+    
+    &:hover {
+      @include box-shadows(0,0,25px,#000);
+    }
+    
+    h2 {
+      font-size: 15px;
+      padding: 15px 20px;
+    }
+        
+    img {
+      margin-left: 20px;
+      @include rounded-corners(5px);
+    }
+
+    li {
+      padding: 0px 10px 10px 20px;
+      font-size: 12px;
+    
+      a {
+        color:#3431F1;
+        font-size: 13px;
+      }
+    }
+  }
+  
+  div.last {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+#awards-and-news {
+  @include center-980;
+
+  h1 {
+    text-transform: uppercase; 
+    position: absolute; 
+    text-align: center; 
+    background-color: #fff; 
+    left: 0px; 
+    top: -13px;
+    font-size: 11px;
+    color: lighten(#999, 15%);
+    padding: 5px 10px;
+    font-weight: normal;
+    text-shadow: 0 0 1px #fff;
+  }
+
+  .news {
+    width: 470px; 
+    float: right;
+    border-top: solid 1px #e2e2e2; 
+    position: relative;
+  
+    li {
+      float: left;
+    }
+
+    img {  
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  .awards {
+    width: 470px; 
+    float: left;
+    border-top: solid 1px #e2e2e2;
+    position: relative; 
+    
+    img{
+      margin: 40px 25px 0 10px;
+    }
+  }  
+
+}      
