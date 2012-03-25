@@ -15,5 +15,3 @@
 /tmp
 .DS_Store
 
-# Ignore .swp files
-*.swp

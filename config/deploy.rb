@@ -1,12 +1,12 @@
 set :application, "sweetly"
 set :repository,  "git@github.com:kunalchaudhari/sweetly.git"
 
-set :user, :deployer
+set :user, :app
 set :use_sudo, false
 
-set :default_environment, {
-  'PATH' => "/home/deployer/.rbenv/shims:/home/deployer/.rbenv/bin:$PATH"
-}
+#set :default_environment, {
+  #'PATH' => "/home/app/.rbenv/shims:/home/app/.rbenv/bin:$PATH"
+#}
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
@@ -31,6 +31,4 @@ namespace :deploy do
   task :precompile_assets do
     run "cd #{current_path} && bundle exec rake assets:precompile"
   end
-  
-  
 end

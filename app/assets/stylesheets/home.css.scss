@@ -1,12 +1,19 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home-index {
+  #what-is {
+    span {
+      font-size: 50px;
+    }
+  }
+}
 #designer-display{
   position: relative;      
   @include center-980;
   
   img.designer-image {
-    padding-top: 20px;
+    padding-top: 9px;
   }
   
   .quote-container{
@@ -79,7 +86,31 @@
     }
   }
 }
+#beatiful-creations {
+  width: 920px; 
+  margin: 50px auto;
+  
+  h1 {
+    text-align: center; 
+    margin-bottom: 30px; 
+    font: {
+      family: 'Cambo',serif; 
+      size: 35px;
+    }
+  }
+  
+  div {
+    img {
+      float: left;
+      margin-right: 3px;
+      margin-bottom: 3px;
+    }
     
+    img.last {
+      margin-right: 0;
+    }
+  }
+}    
 #getinvolve {
   width: 920px; 
   margin: 50px auto;

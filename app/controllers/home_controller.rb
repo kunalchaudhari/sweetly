@@ -9,4 +9,9 @@ class HomeController < ApplicationController
     @partner = Partner.new
     @partner.partnertype = "I want to Host SJS"
   end
+
+  def goodwillband
+    @partner = Partner.new
+    @partner.partnertype = "Send me Goodwill bands"
+  end
 end

@@ -2,7 +2,7 @@ $(function(){
   $('.lastname').watermark("Lastname");
   $('.firstname').watermark("Firstname");
   $('.emailtext').watermark("Email");
-  $('.company').watermark("Company");
+  $('.company').watermark("Company or Organization");
   $('.street1').watermark("Street1");
   $('.street2').watermark("Street2");
   $('.citytext').watermark("City");

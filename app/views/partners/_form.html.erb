@@ -1,6 +1,12 @@
 <div id="partnerform_cont">
 	<%= form_for(@partner, :remote => true, :html => { :id => "partner_form"}) do |f| %>
 		<div class="message hide"></div>
+		<% if @partner.partnertype === "Send me Goodwill bands" %>
+		<div class="field select-band">
+			Select your Goodwill Band: <%= select_tag "partner[band_type]", "<option>Type 1 - Candy Strip (Orange, Silver, Sky blue)</option><option>Type 2 - Candy Strip (Blue, Yellow)</option><option>Type 3 - Candy Strip (Light Yellow, Light Blue, Red)</option>".html_safe, :class => "band_type" %>
+			<br /><br />
+	  </div>
+		<% end %>
 	  <div class="field">
 	    <%= f.text_field :lastname, :class => "lastname" %>
 	  </div>
@@ -28,9 +34,9 @@
 	  <div class="field">
 	    <%= f.text_field :zipcode, :class => "zipcode"  %>
 	  </div>
-		 <div class="field">
-		    <%= f.hidden_field :partnertype, :class => "partnertype"  %>
-		  </div>
+		<div class="field">
+			<%= f.hidden_field :partnertype, :class => "partnertype"  %>
+		</div>
 	  <div class="actions">
 	    <%= f.button @partner.partnertype, :type => "submit", :id => "partner_submit" %><%= image_tag('ajax-loader.gif', :class => "hide", :id => "ajaxloader") %>
 	  </div>

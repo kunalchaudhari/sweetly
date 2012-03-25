@@ -44,6 +44,7 @@ class PartnersController < ApplicationController
 
     respond_to do |format|
       if @partner.save
+        Notifier.partner_request(@partner, "kunalchaudhari@gmail.com").deliver
         format.html { redirect_to @partner, notice: 'Partner was successfully created.' }
         format.json { render json: @partner, status: :created, location: @partner }
         format.js 
