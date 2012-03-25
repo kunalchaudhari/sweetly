@@ -17,15 +17,15 @@ set :use_sudo, false
 # your SCM below:
 set :scm, :git
 
-role :app, "192.168.1.14"
-role :web, "192.168.1.14"
-role :db,  "192.168.1.14", :primary => true
+role :app, "192.168.1.18"
+role :web, "192.168.1.18"
+role :db,  "192.168.1.18", :primary => true
 
 namespace :deploy do
-  desc "Installs required gems binstubs"
-  task :gems, :roles => :app do
-    run "cd #{current_path} && bundle install --binstubs"
-  end
+  #desc "Installs required gems binstubs"
+  #task :gems, :roles => :app do
+    #run "cd #{current_path} && bundle install --binstubs"
+  #end
   
   desc "Precompile assets"
   task :precompile_assets do
