@@ -1,4 +1,4 @@
-require 'capistrano_database'
+require File.expand_path('../cap_db', __FILE__)
 require "bundler/capistrano"
 
 set :application, "sweetly"
