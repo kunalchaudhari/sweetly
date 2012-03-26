@@ -7,6 +7,8 @@ set :repository,  "git@github.com:kunalchaudhari/sweetly.git"
 set :user, :app
 set :use_sudo, false
 
+set :port, 30000
+
 #set :default_environment, {
   #'PATH' => "/home/app/.rbenv/shims:/home/app/.rbenv/bin:$PATH"
 #}

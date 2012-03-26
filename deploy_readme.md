@@ -51,9 +51,11 @@ Step 2: Installl Web server, Database server and other softwares as root
   * Install rubies in ```/opt``` directory using ruby-build
   * symlink to ~/.rbenv/versions to /opt directory
 
-How to set up bundlers
-Understand rubygems 
+Step 3: Getting read for deployment using Capistrano
 
+  * capistrano and database.yaml file 
+    http://www.simonecarletti.com/blog/2009/06/capistrano-and-database-yml/
+  * require "bundler/capistrano"
 
 Upload the code using the cap tasks
 After that run the bundle install --binstubs
