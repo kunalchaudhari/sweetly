@@ -1,3 +1,6 @@
+require 'capistrano_database'
+require "bundler/capistrano"
+
 set :application, "sweetly"
 set :repository,  "git@github.com:kunalchaudhari/sweetly.git"
 

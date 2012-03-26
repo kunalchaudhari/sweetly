@@ -68,3 +68,10 @@ Key Points:
 * rbenv and ruby-build
 * bundler to manage gems
 * capistrano for deployment
+
+
+Steps to follow on local:
+
+* bundle install --binstubs
+* create database on remote
+* cap task to bundle install --deloyment
