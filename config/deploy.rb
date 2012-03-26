@@ -21,6 +21,7 @@ set :port, 30000
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 set :scm, :git
+ssh_options[:forward_agent] = true
 
 role :app, "192.168.1.18"
 role :web, "192.168.1.18"
