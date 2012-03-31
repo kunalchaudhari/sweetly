@@ -9,16 +9,16 @@
   }
 }
 #designer-display{
-  position: relative;      
+  position: relative;
   @include center-980;
-  
+
   img.designer-image {
     padding-top: 9px;
   }
-  
+
   .quote-container{
-    
-    @include rounded-corners(5px);        
+
+    @include rounded-corners(5px);
     position: absolute; 
     left: 308px; 
     top: 70px; 
@@ -28,10 +28,10 @@
     background-color: #F2F2F2;
     line-height: 23px;
     text-align: left;
-    
+
     .quote{
       font-style: italic;
-      
+
       cite{
         float: right;
         padding:{
@@ -39,7 +39,7 @@
           top: 10px;
         }
         font-size: 11px;
-        
+
         span {
           color: #666;
         }
@@ -50,8 +50,8 @@
         left: 20px;
         top: 99px;
       }
-    }  
-  }    
+    }
+  }
 
   a.shop-button{
     position: absolute;
@@ -60,17 +60,17 @@
     &:active{
       top: 171px;
     }
-  } 
+  }
 
   ul {
     position: absolute;
     top: 232px;
     left: 235px;
     font-size: 12px;
-    
+
     li {
       float: left;
-      border-right: solid 1px #ccc;      
+      border-right: solid 1px #ccc;
       line-height: 13px;
       a {
         padding: 0 10px;
@@ -80,7 +80,7 @@
         }
       }
     }
-    
+
     li.last {
       border-right: 0 none;
     }
@@ -89,7 +89,7 @@
 #beatiful-creations {
   width: 920px; 
   margin: 50px auto;
-  
+
   h1 {
     text-align: center; 
     margin-bottom: 30px; 
@@ -98,23 +98,23 @@
       size: 35px;
     }
   }
-  
+
   div {
     img {
       float: left;
       margin-right: 3px;
       margin-bottom: 3px;
     }
-    
+
     img.last {
       margin-right: 0;
     }
   }
-}    
+}
 #getinvolve {
   width: 920px; 
   margin: 50px auto;
-  
+
   h1 {
     text-align: center; 
     margin-bottom: 30px; 
@@ -123,7 +123,7 @@
       size: 35px;
     }
   }
-    
+
   div.box {
     @include box-shadows(0,0,15px,#e2e2e2);
     @include rounded-corners(5px);
@@ -136,16 +136,16 @@
     a{
       color: #333;
     }
-    
+
     &:hover {
       @include box-shadows(0,0,25px,#000);
     }
-    
+
     h2 {
       font-size: 15px;
       padding: 15px 20px;
     }
-        
+
     img {
       margin-left: 20px;
       @include rounded-corners(5px);
@@ -154,14 +154,14 @@
     li {
       padding: 0px 10px 10px 20px;
       font-size: 12px;
-    
+
       a {
         color:#3431F1;
         font-size: 13px;
       }
     }
   }
-  
+
   div.last {
     padding-right: 0;
     margin-right: 0;
@@ -190,12 +190,12 @@
     float: right;
     border-top: solid 1px #e2e2e2; 
     position: relative;
-  
+
     li {
       float: left;
     }
 
-    img {  
+    img {
       margin-top: 30px;
       margin-left: 30px;
     }
@@ -206,10 +206,10 @@
     float: left;
     border-top: solid 1px #e2e2e2;
     position: relative; 
-    
+
     img{
       margin: 40px 25px 0 10px;
     }
-  }  
+  }
 
-}      
+}
