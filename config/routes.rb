@@ -1,9 +1,14 @@
 Sweetly::Application.routes.draw do
-  resources :subscriptions
+  ActiveAdmin.routes(self)
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  resources :notification_emails
+  resources :subscriptions
   resources :partners
 
   root :to => 'home#index'
+
   match 'wholesalepartner' => 'home#partner'
   match 'sjs' => 'home#sjs'
   match 'contact' => 'home#contact'
@@ -14,7 +19,7 @@ Sweetly::Application.routes.draw do
   match 'getinvolve' => 'home#getinvolve'
   match 'designers' => 'home#designers'
   match 'goodwillband' => 'home#goodwillband'
-  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
