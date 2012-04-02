@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  before_filter :authenticate_admin_user!, :only => [:reload_showcase]
 
   def partner
     @partner = Partner.new
