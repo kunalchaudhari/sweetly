@@ -1,4 +1,4 @@
-.product-photos {
+.product_photos {
   .photo {
     margin-bottom: 5px;
     margin-right: 5px;
@@ -19,8 +19,12 @@
 #masthead {
   height: 60px !important;
 }
-
-.showcase-promo {
+.big_loader {
+  margin: 200px auto;
+  width: 200px;
+  text-align: center;
+}
+.showcase_promo {
   background-color: #f9f9f9;
   margin-bottom: 2px;
   font-size: 20px;

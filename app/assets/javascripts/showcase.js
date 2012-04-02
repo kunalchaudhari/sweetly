@@ -4,9 +4,11 @@ $(function(){
       $(this).attr("height", "108");
     }
   });
+  $('.big_loader').hide();
+  $('.showcase_promo').fadeIn("slow");
   $('.photo img').fadeIn("slow");
   $('.photo').fancybox();
-  $('#getintouch-showcase').click(function(){
-    $('#partner-showcase').toggle("slow");
+  $('#getintouch_showcase').click(function(){
+    $('#partner_showcase').toggle("slow");
   });
 });
