@@ -1,0 +1,35 @@
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>Picasa</th>
+    <th>Album</th>
+    <th>Thumbnail 1</th>
+    <th>Thumbnail 2</th>
+    <th>Thumbnail 3</th>
+    <th>Photo</th>
+    <th>Sort order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @photos.each do |photo| %>
+  <tr>
+    <td><%= photo.picasa_id %></td>
+    <td><%= photo.album_id %></td>
+    <td><%= photo.thumbnail_1 %></td>
+    <td><%= photo.thumbnail_2 %></td>
+    <td><%= photo.thumbnail_3 %></td>
+    <td><%= photo.photo %></td>
+    <td><%= photo.sort_order %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    <td><%= link_to 'Destroy', photo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Photo', new_photo_path %>

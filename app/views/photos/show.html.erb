@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Picasa:</b>
+  <%= @photo.picasa_id %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%= @photo.album_id %>
+</p>
+
+<p>
+  <b>Thumbnail 1:</b>
+  <%= @photo.thumbnail_1 %>
+</p>
+
+<p>
+  <b>Thumbnail 2:</b>
+  <%= @photo.thumbnail_2 %>
+</p>
+
+<p>
+  <b>Thumbnail 3:</b>
+  <%= @photo.thumbnail_3 %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= @photo.photo %>
+</p>
+
+<p>
+  <b>Sort order:</b>
+  <%= @photo.sort_order %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

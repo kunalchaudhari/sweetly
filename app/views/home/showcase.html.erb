@@ -1,0 +1,8 @@
+<div class="product-photos">
+  <% @photos.each do |photo| %>
+    <a rel="showcase" href="<%= photo.photo %>" class="photo"><%= image_tag photo.thumbnail_2 %></a>
+  <% end %>
+  <div class="clear">
+  </div>
+</div>
+

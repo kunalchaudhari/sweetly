@@ -1,4 +1,12 @@
 Sweetly::Application.routes.draw do
+  resources :albums
+
+  resources :photos
+
+  resources :picasa_photos
+
+  resources :picasa_albums
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -19,8 +27,9 @@ Sweetly::Application.routes.draw do
   match 'getinvolve' => 'home#getinvolve'
   match 'designers' => 'home#designers'
   match 'goodwillband' => 'home#goodwillband'
-
   # The priority is based upon order of creation:
+  match 'showcase' => 'home#showcase'
+  match 'reload_showcase(/:id)' => 'home#reload_showcase'
   # first created -> highest priority.
 
   # Sample of regular route:

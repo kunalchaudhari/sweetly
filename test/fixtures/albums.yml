@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  picasa_id: MyString
+  title: MyString
+  photo: MyText
+
+two:
+  picasa_id: MyString
+  title: MyString
+  photo: MyText

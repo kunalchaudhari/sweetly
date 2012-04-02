@@ -1,0 +1,17 @@
+.product-photos {
+  .photo {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: block;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 128px;
+    height: 150px;
+    width: 150px;
+    img {
+      border: solid 1px #ccc;
+      display: none;
+    }
+  }
+}

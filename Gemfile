@@ -30,5 +30,6 @@ gem 'unicorn'
 # Deploy with Capistrano
 gem 'capistrano'
 gem 'therubyracer'
+gem 'picasa'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
