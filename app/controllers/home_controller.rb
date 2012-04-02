@@ -16,6 +16,8 @@ class HomeController < ApplicationController
   end
 
   def showcase
+    @partner = Partner.new
+    @partner.partnertype = "I am Interested !"
     @photos = Photo.all
   end
 

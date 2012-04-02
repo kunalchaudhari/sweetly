@@ -10,6 +10,5 @@ $(function(){
   $('.zipcode').watermark("Zipcode");
   $('#partner_submit').on('click', function(event){
     $('#ajaxloader').show();
-    $(this).text("Accepting your request...");
   });
 });

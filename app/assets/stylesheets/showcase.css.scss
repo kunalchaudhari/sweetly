@@ -15,3 +15,44 @@
     }
   }
 }
+
+#masthead {
+  height: 60px !important;
+}
+
+.showcase-promo {
+  background-color: #f9f9f9;
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  /*@include box-shadows(0, 0px, 1px, #ccc);*/
+
+  div.desc {
+    width: 1000px;
+    margin: 0 auto;
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      padding-top: 10px;
+    }
+
+    button {
+      @include button;
+      font-size: 13px;
+      padding: 4px 10px 5px;
+    }
+
+    .partner-form {
+      display: none;
+      margin-top: 30px;
+      padding-bottom: 30px;
+      border-top: solid 2px #000;
+      float: none;
+      padding-left: 0;
+    }
+  }
+}

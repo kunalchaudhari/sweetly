@@ -1,3 +1,16 @@
+<div class="showcase-promo">
+  <div class="desc">
+    <h2>Here is our product showcase. Wide range of handmade jewelry.</h2>
+    <p>Sweetly works closely with rural women with design-focused community development approach to create
+beautiful handmade jewelry designs. Here are wide-range of Sweetly products which you can resale
+in your store. Are you retailer/wholesaler/customer? we have something for everyone.</p>
+    <p><button id="getintouch-showcase">Get in touch</button> to show your interest.</p>
+    <div id="partner-showcase" class="partner-form">
+      <h1>Please fill our below form:</h1>
+      <%= render :partial => "partners/form" %>
+    </div>
+  </div>
+</div>
 <div class="product-photos">
   <% @photos.each do |photo| %>
     <a rel="showcase" href="<%= photo.photo %>" class="photo"><%= image_tag photo.thumbnail_2 %></a>

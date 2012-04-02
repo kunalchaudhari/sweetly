@@ -6,4 +6,7 @@ $(function(){
   });
   $('.photo img').fadeIn("slow");
   $('.photo').fancybox();
+  $('#getintouch-showcase').click(function(){
+    $('#partner-showcase').toggle("slow");
+  });
 });
