@@ -10,6 +10,21 @@ $(function(){
       'speedOut'		:	100, 
       'overlayShow'	:	true
 	});
+
+  $('#shop-learn-involve > a').hover(function(){
+    debugger;
+    $('#shop-learn-involve a div').hide();
+    var id = this.id;
+    var interval = setInterval(function(){
+      if($('#' + id).css("width") == "450px"){
+        $('#' + id + ' > div').fadeIn();
+        clearInterval(interval);
+      }
+    }, 20);
+  }, function() {
+    $('#' + this.id + ' > div').hide();
+    $('#shop-learn-involve a div').hide();
+  });
   // $('#designer-profiles').cycle({ 
   //       fx:     'fade', 
   //       speed:  'fast', 
