@@ -12,7 +12,6 @@ $(function(){
 	});
 
   $('#shop-learn-involve > a').hover(function(){
-    debugger;
     $('#shop-learn-involve a div').hide();
     var id = this.id;
     var interval = setInterval(function(){
