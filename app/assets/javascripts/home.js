@@ -12,17 +12,9 @@ $(function(){
 	});
 
   $('#shop-learn-involve > a').hover(function(){
-    $('#shop-learn-involve a div').hide();
-    var id = this.id;
-    var interval = setInterval(function(){
-      if($('#' + id).css("width") == "450px"){
-        $('#' + id + ' > div').fadeIn();
-        clearInterval(interval);
-      }
-    }, 20);
+    $('.' + this.id + '-div').fadeIn();
   }, function() {
-    $('#' + this.id + ' > div').hide();
-    $('#shop-learn-involve a div').hide();
+    $('.' + this.id + '-div').hide();
   });
   // $('#designer-profiles').cycle({ 
   //       fx:     'fade', 
