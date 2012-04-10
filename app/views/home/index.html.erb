@@ -5,15 +5,15 @@
 		</h1>
 	</header> <!-- #what-is -->
   <section id="shop-learn-involve">
-    <a id="shop" href="#" >
+  <a id="shop" href="<%= showcase_path %>" >
       <%= image_tag "model/1.png" %>
       <h3>Shop</h3>
     </a>
-    <a id="learn" href="#" class="second">
+    <a id="learn" href="<%= designers_path %>" class="second">
       <%= image_tag "designer/250/1.png" %>
       <h3>Learn</h3>
     </a>
-    <a id="involve" href="#" class="last">
+    <a id="involve" href="<%= partners_path %>" class="last">
       <%= image_tag "getinvolve.png" %>
       <h3>Partner</h3>
     </a>
@@ -73,21 +73,23 @@
 </aside>
 <section id="beatiful-creations">
 	<h1>Beautiful creations by empowered women</h1>
-	<div>
-		<%= image_tag "jewelry/11.jpg", :width => "150" %>
-		<%= image_tag "jewelry/2.jpg", :width => "150" %>
-		<%= image_tag "jewelry/3.jpg", :width => "150" %>
-		<%= image_tag "jewelry/4.jpg", :width => "150" %>
-		<%= image_tag "jewelry/5.jpg", :width => "150" %>
-		<%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
-		<%= image_tag "jewelry/7.jpg", :width => "150" %>
-		<%= image_tag "jewelry/8.jpg", :width => "150" %>
-		<%= image_tag "jewelry/9.jpg", :width => "150" %>
-		<%= image_tag "jewelry/10.jpg", :width => "150" %>
-		<%= image_tag "jewelry/12.jpg", :width => "150" %>
-		<%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
-		<div class="clear"></div>
-	</div>
+  <div>
+    <a href="<%= showcase_path %>" >
+      <%= image_tag "jewelry/11.jpg", :width => "150" %>
+      <%= image_tag "jewelry/2.jpg", :width => "150" %>
+      <%= image_tag "jewelry/3.jpg", :width => "150" %>
+      <%= image_tag "jewelry/4.jpg", :width => "150" %>
+      <%= image_tag "jewelry/5.jpg", :width => "150" %>
+      <%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
+      <%= image_tag "jewelry/7.jpg", :width => "150" %>
+      <%= image_tag "jewelry/8.jpg", :width => "150" %>
+      <%= image_tag "jewelry/9.jpg", :width => "150" %>
+      <%= image_tag "jewelry/10.jpg", :width => "150" %>
+      <%= image_tag "jewelry/12.jpg", :width => "150" %>
+      <%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
+      <div class="clear"></div>
+    </a>
+  </div>
 </section>
 <section id="getinvolve">
 	<h1>Let's work together to make beautiful world! </h1>
