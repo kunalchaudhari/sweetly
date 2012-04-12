@@ -19,12 +19,17 @@
     float: left;
     border: solid 1px #ccc;
     @include box-shadow(0 0 5px #e2e2e2);
+    @include add-transition-box-shadows(0.5s,ease-out);
     @include border-radius(5px);
     text-align: center;
     height: 370px;
     background-color: #fff;
     margin-left: 90px;
     font-family: 'Cambo', serif;
+
+    &:hover {
+      @include box-shadow(0 0 15px #666);
+    }
 
     header {
 
