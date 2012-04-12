@@ -429,7 +429,7 @@ h1.title {
     width: 450px;
     float: left;
     border-right: solid 1px #ccc;
-    padding-top: 15px;
+    padding-top: 30px;
 
     .points {
       padding-left: 20px;
@@ -437,7 +437,7 @@ h1.title {
 
       li {
         font-size: 12px;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
 
         a {
           font:{
@@ -480,7 +480,7 @@ h1.title {
     float: left;
 
     h2 {
-      padding-top: 20px;
+      padding-top: 25px;
       padding-bottom: 10px;
       font-size: 18px;
     }
@@ -517,34 +517,30 @@ h1.title {
             display: none;}
         }
       }
-
-      li.social{
-        padding-top: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        a {
-          border-bottom: double 3px;
-        }
-      }
     }
-
   }
 
   .terms {
     margin: 0 auto;
-    width: 350px;
+    width: 450px;
     padding: 10px;
     text-align: center;
     li {
-      display: inline-block;
+      display: none;
       line-height: 15px;
-      a {
-        padding:0 10px;
-        font-size: 12px;
-      }
     }
     li.last{
       border-right: 0 none;
+    }
+
+    li.social{
+      display: block;
+      padding-top: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      a {
+        border-bottom: double 3px;
+      }
     }
   }
 
