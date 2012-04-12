@@ -3,6 +3,6 @@ class Notifier < ActionMailer::Base
 
   def partner_request(partner, recipients)
     @partner = partner
-    mail(:to => recipients, :subject => "#{partner.partnertype} - #{partner.lastname} #{partner.firstname}")
+    mail(:to => recipients, :subject => "#{partner.partnertype} request - #{partner.lastname} #{partner.firstname}")
   end
 end

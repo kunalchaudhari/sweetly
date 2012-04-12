@@ -1,4 +1,6 @@
 class NotificationEmailsController < ApplicationController
+  before_filter :authenticate_admin_user!
+
   # GET /notification_emails
   # GET /notification_emails.json
   def index

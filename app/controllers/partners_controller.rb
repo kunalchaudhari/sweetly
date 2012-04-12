@@ -1,5 +1,5 @@
 class PartnersController < ApplicationController
-  before_filter :authenticate_admin_user!, :only => [:edit, :update, :show, :destroy]
+  before_filter :authenticate_admin_user!, :except => [:new, :create]
   # GET /partners
   # GET /partners.json
   def index

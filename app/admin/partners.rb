@@ -4,6 +4,7 @@ ActiveAdmin.register Partner do
       "#{partner.lastname} #{partner.firstname}"
     end
     column :email
+    column :message
     column "Date" do |partner|
       partner.created_at.strftime("%b %d, %Y")
     end

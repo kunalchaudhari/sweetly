@@ -4,6 +4,8 @@ ActiveAdmin::Dashboards.build do
       column :name do |partner|
         "#{partner.lastname} #{partner.firstname}"
       end
+      column :email
+      column :message
       column "From" do |partner|
         "#{partner.city}, #{partner.state}&mdash;#{partner.zipcode}".html_safe
       end

@@ -8,6 +8,7 @@ $(function(){
   $('.citytext').watermark("City");
   $('.state').watermark("State");
   $('.zipcode').watermark("Zipcode");
+  $('.message').watermark("Message");
   $('#partner_submit').on('click', function(event){
     $('#ajaxloader').show();
   });

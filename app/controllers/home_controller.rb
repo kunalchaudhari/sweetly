@@ -3,7 +3,12 @@ class HomeController < ApplicationController
 
   def partner
     @partner = Partner.new
-    @partner.partnertype = "I want to be Wholesale Partner"
+    @partner.partnertype = "Wholesale Partner"
+  end
+
+  def partners
+    @partner = Partner.new
+    @partner.partnertype = "Community Partner"
   end
 
   def sjs
