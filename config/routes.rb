@@ -13,7 +13,8 @@ Sweetly::Application.routes.draw do
 
   resources :notification_emails
   resources :subscriptions
-  resources :partners
+  match 'partners' => 'partners#create', :via => 'post'
+  match 'partners' => 'home#partners'
 
   root :to => 'home#index'
 
