@@ -1,4 +1,4 @@
-$main-color: #3431F1;
+$main-color: #423FF2;
 $button-from-color: #93E352;
 $button-to-color: darken($button-from-color, 15%);
 
@@ -218,6 +218,7 @@ h1.title {
   h3 {
     padding-left: 30px;
     padding-bottom: 20px;
+    padding-top: 20px;
     font-weight: bold;
     text-decoration: underline;
     font-size: 13px;
@@ -229,7 +230,7 @@ h1.title {
   li{
     list-style-type: disc;
     font-size: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     div.que{
       padding-bottom: 5px;
       line-height: 20px;
