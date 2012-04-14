@@ -1,6 +1,12 @@
 .home-designers {
   background: #f2f2f2 url("/assets/noise.png") left top repeat;
 
+  .groupinfo {
+    border-top: solid 1px #ccc;
+    line-height: 25px;
+    text-align: center;
+    padding: 30px;
+  }
   #primary {
     height: auto;
     background-image: none;
