@@ -66,13 +66,11 @@
   }
 }
 
-.select-band {
-  vertical-align: middle;
-  height: 20px;
-  padding-top: 15px;
-  color: #555;
+.actions {
+
   select {
-    font-family: 'Duru Sans', Verdana, "Times New Roman", sans-serif;
-    font-size: 16px;
+    font: 16px 'Duru Sans', Verdana, "Times New Roman", sans-serif;
+    margin-left: 5px;
+    margin-right: 10px;
   }
 }

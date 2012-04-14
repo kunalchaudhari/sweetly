@@ -1,15 +1,11 @@
 ActiveAdmin::Dashboards.build do
   section "Recent Partnership Requests" do
     table_for Partner.order("created_at desc").limit(5) do
-      column :name do |partner|
-        "#{partner.lastname} #{partner.firstname}"
-      end
+      column :fullname
       column :email
       column :message
-      column "From" do |partner|
-        "#{partner.city}, #{partner.state}&mdash;#{partner.zipcode}".html_safe
-      end
-      column "Requested on" do |partner|
+      column :address
+      column "Request on" do |partner|
         partner.created_at.strftime("%b %d, %Y")
       end
     end

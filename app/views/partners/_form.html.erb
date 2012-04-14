@@ -2,47 +2,23 @@
 	<%= form_for(@partner, :remote => true, :html => { :id => "partner_form"}) do |f| %>
 		<div class="message hide"></div>
 		
-	  <div class="field">
-	    <%= f.text_field :lastname, :class => "lastname" %>
-	  </div>
-	  <div class="field">
-	    <%= f.text_field :firstname, :class => "firstname"  %>
+    <div class="field email">
+	    <%= f.text_field :fullname, :class => "fullname"  %>
 	  </div>
 	  <div class="field email">
 	    <%= f.text_field :email, :class => "emailtext"  %>
 	  </div>
-	  <div class="field email">
-	    <%= f.text_field :company, :class => "company"  %>
-	  </div>
-	  <div class="field">
-	    <%= f.text_field :street1, :class => "street1"  %>
-	  </div>
-	  <div class="field">
-	    <%= f.text_field :street2, :class => "street2"  %>
-	  </div>
-	  <div class="field city">
-	    <%= f.text_field :city, :class => "citytext"  %>
-	  </div>
-	  <div class="field">
-	    <%= f.text_field :state, :class => "state"  %>
-	  </div>
+    <div class="field email">
+      <%= f.text_area :address, :class => "address", :rows => "4" %>
+    </div>
 	  <div class="field">
 	    <%= f.text_field :zipcode, :class => "zipcode"  %>
 	  </div>
-    <div class="clear">
-      <br />
-    </div>
-    <div class="field select-band">
-			I want to become: <%= select_tag "partner[partnertype]", "<option>Community Partner</option><option>Wholesale Partner</option><option>Other</option>".html_safe, :class => "band_type" %>
-	  </div>
-    <div class="clear">
-      <br />
-    </div>
-    <div class="field">
-      <%= f.text_area :message, :class => "message", :rows => "8" %>
+    <div class="field email">
+      <%= f.text_area :message, :class => "messagetext", :rows => "8" %>
     </div>
 	  <div class="actions">
-	    <%= f.button "I am interested", :type => "submit", :id => "partner_submit" %><%= image_tag('ajax-loader.gif', :class => "hide", :id => "ajaxloader") %>
+	    <%= f.button "I want to become", :type => "submit", :id => "partner_submit" %>  <%= select_tag "partner[partnertype]", "<option>Community Partner</option><option>Wholesale Partner</option><option>Other partner</option>".html_safe, :class => "band_type" %>  <%= image_tag('ajax-loader.gif', :class => "hide", :id => "ajaxloader") %>
 	  </div>
 	<% end %>
 </div>
