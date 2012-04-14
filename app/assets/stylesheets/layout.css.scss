@@ -347,6 +347,7 @@ h1.title {
     @include center-980;
 
     h1 {
+      display: none;
       font:{
         family: 'Cambo', serif;
         size: 35px;
@@ -357,6 +358,7 @@ h1.title {
   }
 
   .videos{
+    padding-top: 50px;
     width: 625px;
     margin: 0 auto;
 
