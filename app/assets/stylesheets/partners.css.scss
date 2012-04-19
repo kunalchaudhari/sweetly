@@ -7,14 +7,52 @@
     height: auto;
   }
 }
+.partner-adv {
+  padding: 30px 0px 50px 0;
+  width: 980px;
+  margin: 0 auto;
+
+  div {
+    float: left;
+    width: 375px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+
+    ul {
+
+      li {
+        padding-bottom: 20px;
+        font-size: 12px;
+        line-height: 18px;
+
+        h2 {
+          font-weight: bold;
+          font: 18px 'cambo' serif;
+          padding-bottom: 5px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  div.first {
+    border-right: solid 1px #ccc;
+  }
+}
+
 .our_partners {
   width: 980px;
   margin: 0 auto;
 
   h1 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     padding-bottom: 50px;
+    font-family: 'Cambo', serif;
+    font-weight: normal;
   }
 
   ul {
