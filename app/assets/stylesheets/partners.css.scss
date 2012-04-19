@@ -19,10 +19,14 @@
 
   ul {
     padding-bottom: 50px;
+    margin-left: 70px;
 
     li {
       padding-bottom: 20px;
-      text-align: center;
+      text-align: left;
+      padding-left: 50px;
+      background: transparent url(../assets/star.png) 0px 0px no-repeat;
+      line-height: 32px;
 
       b {
         font-weight: bold;
