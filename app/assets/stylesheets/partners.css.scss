@@ -5,10 +5,12 @@
 
   #primary {
     height: auto;
+    @include gradient-background(#fff,#f9f9f9);
   }
 }
+
 .partner-adv {
-  padding: 30px 0px 50px 0;
+  padding: 50px 0px 70px 0;
   width: 980px;
   margin: 0 auto;
 
