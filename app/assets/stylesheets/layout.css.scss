@@ -292,6 +292,10 @@ h1.title {
   @include center-980;
   padding: 20px 0;
   text-align: center;
+  p {
+    width: 840px;
+    margin: 0 auto;
+  }
   a {
     color: #000;
     @include add-transition(color, 0.7s, ease-in-out);
