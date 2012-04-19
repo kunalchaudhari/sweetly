@@ -132,7 +132,7 @@ h1.title {
   padding-top: 30px;
   padding-left: 50px;
   float: left;
-  width: 500px;
+  width: 400px;
   h1{
     font-size: 20px;
     padding-bottom: 20px;
@@ -155,13 +155,13 @@ h1.title {
     }
 
     textarea {
-      width: 450px;
+      width: 350px;
     }
   }
   div.email{
     float: none;
     input[type="text"]{
-      width: 400px;
+      width: 300px;
     }
   }
   div.city{
@@ -210,9 +210,9 @@ h1.title {
 }
 .partner-faq{
   width: 400px;
-  float: right;
+  float: left;
+  margin-left: 50px;
   padding-top: 35px;
-  border-left: solid 1px #ccc;
   h2{
     padding-left: 30px;
     padding-bottom: 20px;

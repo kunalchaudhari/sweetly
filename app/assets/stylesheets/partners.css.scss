@@ -10,7 +10,7 @@
 }
 
 .partner-adv {
-  padding: 50px 0px 70px 0;
+  padding: 30px 0px 70px 0;
   width: 980px;
   margin: 0 auto;
 
@@ -26,15 +26,29 @@
     ul {
 
       li {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+        padding-top: 10px;
         font-size: 12px;
         line-height: 18px;
+        position: relative;
 
         h2 {
           font-weight: bold;
-          font: 18px 'cambo' serif;
+          font-family: 'cambo' serif;
+          font-size: 18px;
           padding-bottom: 5px;
           text-decoration: underline;
+        }
+
+        h3 {
+          font-family: Georgia, serif;
+          position: absolute;
+          left: -9px;
+          top: 12px;
+          margin-left: -30px;
+          font-size: 55px;
+          color: #E2E2E2;
+          font-weight: normal;
         }
       }
     }
@@ -52,29 +66,24 @@
   h1 {
     font-size: 35px;
     text-align: center;
-    padding-bottom: 50px;
     font-family: 'Cambo', serif;
     font-weight: normal;
   }
 
-  ul {
-    padding-bottom: 50px;
-    margin-left: 70px;
+  div {
+    border-top: 0 none !important;
+    border-bottom: 0 none !important;
+  }
 
-    li {
-      padding-bottom: 20px;
-      text-align: left;
-      padding-left: 50px;
-      background: transparent url(../assets/star.png) 0px 0px no-repeat;
-      line-height: 32px;
-
-      b {
-        font-weight: bold;
-        text-decoration: underline;
-      }
+  li {
+    list-style-image: url(../assets/star.png);
+    list-style-position: outside;
+    h2 {
+      text-decoration: none !important;
     }
   }
 }
+
 .partners {
   padding: 40px 0 60px 130px;
   width: 980px;
