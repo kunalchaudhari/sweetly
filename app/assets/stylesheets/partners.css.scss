@@ -13,37 +13,49 @@
   #ft {
     margin-top: 0;
   }
+
+  .cendiv {
+    border-top: solid 1px #ccc;
+  }
 }
 
 .partner-adv {
-  padding: 10px 0px 70px 0;
+  padding: 10px 0px 30px 0;
   width: 980px;
   margin: 0 auto;
 
-  div {
-    float: left;
-    width: 375px;
-    padding-left: 50px;
-    padding-right: 50px;
+  div.first {
     padding-top: 20px;
-    border-bottom: dashed 1px #ccc;
-    border-top: dashed 1px #ccc;
+    width: 850px;
+    margin: 0 auto;
+
+    div {
+      float: right;
+      width: 600px;
+      padding-top: 25px;
+    }
+
+    img {
+      float: left;
+      width: 190px;
+    }
 
     ul {
 
       li {
+        clear: left;
         padding-bottom: 40px;
         padding-top: 10px;
         font-size: 12px;
         line-height: 18px;
+        height: 180px;
         position: relative;
 
         h2 {
           font-weight: bold;
           font-family: 'cambo' serif;
-          font-size: 18px;
-          padding-bottom: 5px;
-          text-decoration: underline;
+          font-size: 25px;
+          padding-bottom: 10px;
         }
 
         h3 {
@@ -58,12 +70,35 @@
         }
       }
     }
+
+    ol {
+      padding-top: 10px;
+      li {
+        padding-bottom: 0px;
+        list-style-type: disc;
+        margin-left: 15px;
+        height: auto;
+      }
+    }
   }
 }
 
 .our_partners {
   width: 980px;
   margin: 0 auto;
+
+  div {
+    float: left;
+    width: 375px;
+    padding: 50px 5px 50px 100px;
+
+    h2 {
+      font-weight: bold;
+      font-family: 'cambo' serif;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+  }
 
   h1 {
     font-size: 35px;
@@ -75,64 +110,9 @@
   li {
     list-style-image: url(../assets/star.png);
     list-style-position: outside;
+    padding-bottom: 20px;
     h2 {
       text-decoration: none !important;
-    }
-  }
-}
-
-.partners {
-  padding: 40px 0 60px 130px;
-  width: 980px;
-  margin: 0 auto;
-
-  article {
-    width: 310px;
-    padding: 15px;
-    float: left;
-    border: solid 1px #e2e2e2;
-    @include add-transition-box-shadows(0.5s,ease-out);
-    @include border-radius(5px);
-    text-align: center;
-    height: 370px;
-    background-color: darken(#fff, 3%);
-    margin-left: 50px;
-    font-family: 'Cambo', serif;
-
-    &:hover {
-      @include box-shadow(0 0 10px #999);
-    }
-
-    header {
-
-      h1 {
-        font-size: 20px;
-      }
-
-      h2 {
-        font-size: 13px;
-        padding: 10px 0 20px 0;
-        color: #888;
-        font-weight: normal;
-      }
-    }
-
-    ul {
-      padding-top: 20px;
-
-      li {
-        padding-top: 15px;
-        font-size: 14px;
-        text-align: left;
-        line-height: 20px;
-        list-style-type: disc;
-        margin-left: 28px;
-        color: #555;
-
-        span {
-          text-decoration: underline;
-        }
-      }
     }
   }
 }
