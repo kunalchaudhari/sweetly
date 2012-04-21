@@ -145,11 +145,14 @@
     padding: 50px 0px 50px 0px;
 
     h2 {
-      font-weight: bold;
       font-family: 'cambo' serif;
       font-size: 18px;
       padding-bottom: 10px;
     }
+  }
+
+  div.first {
+    margin-right: 30px;
   }
 
   h1 {
@@ -162,7 +165,7 @@
   li {
     padding-bottom: 70px;
     padding-left: 100px;
-    padding-right: 50px;
+    padding-right: 0px;
     position: relative;
 
     img {
