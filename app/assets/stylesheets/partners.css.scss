@@ -56,6 +56,10 @@
           margin: 10px auto 0 auto;
           border: solid 1px green;
           @include border-radius(3px);
+
+          &:hover {
+            @include box-shadow(0 0 5px #ccc);
+          }
         }
 
         img {
