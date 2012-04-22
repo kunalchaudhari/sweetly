@@ -46,20 +46,29 @@
         height: 250px;
         position: relative;
 
-        a {
-          color: #fff;
-          font-size: 12px;
+        a.partnerbox {
           display: block;
-          width: 140px;
-          background-color: lighten(green, 10%);
-          margin: 10px auto 0 auto;
-          border: solid 1px green;
-          @include border-radius(3px);
+          color: #fff;
+
+          span {
+            font-size: 16px;
+            display: block;
+            width: 150px;
+            background-color: lighten(green, 10%);
+            margin: 27px auto 0 212px;
+            @include border-radius(3px);
+            @include box-shadow(0 0 1px #000);
+            padding: 5px 10px;
+          }
 
           &:hover {
-            @include box-shadow(0 0 5px #ccc);
+            span {
+              display: block;
+              @include box-shadow(0px 1px 1px #000);
+            }
           }
         }
+
 
         img {
           position: absolute;
@@ -82,7 +91,7 @@
           width: 400px;
           padding: 0;
           font-size: 16px;
-          padding-top: 12px;
+          padding-top: 20px;
           line-height: 22px;
         }
 
@@ -92,6 +101,7 @@
           width: 200px;
           padding: 0 5px 0 20px;
           margin-top: 17px;
+          height: 120px;
 
           ol {
             padding-top: 0;
@@ -106,17 +116,23 @@
 
       li.blue {
         background: transparent url("../assets/blue.png") left center no-repeat;
-        a {
-          background-color: lighten(#006be9, 13%);
-          border: solid 1px darken(#006be9, 10%);
+        a.partnerbox {
+          span {
+            background-color: lighten(#006be9, 13%);
+          }
+
+          &:hover {
+
+          }
         }
       }
 
       li.orange {
         background: transparent url("../assets/orange.png") left center no-repeat;
-        a {
-          background-color: lighten(#e55922, 13%);
-          border: solid 1px darken(#e55922, 10%);
+        a.partnerbox {
+          span {
+            background-color: lighten(#e55922, 13%);
+          }
         }
       }
       li.green {
