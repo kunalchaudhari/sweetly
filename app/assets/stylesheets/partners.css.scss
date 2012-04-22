@@ -58,6 +58,7 @@
             margin: 33px auto 0 220px;
             @include border-radius(3px);
             padding: 1px 5px;
+            display: none;
           }
 
           &:hover {
