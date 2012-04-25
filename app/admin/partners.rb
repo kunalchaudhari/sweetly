@@ -3,7 +3,8 @@ ActiveAdmin.register Partner do
     column :fullname
     column :email
     column :message
-    column :zipcode
+    column :country
+    column :address
     column "Interested in", :partnertype
     column "Request on" do |partner|
       partner.created_at.strftime("%b %d, %Y")

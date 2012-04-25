@@ -4,7 +4,7 @@ ActiveAdmin::Dashboards.build do
       column :fullname
       column :email
       column :message
-      column :address
+      column :country
       column "Request on" do |partner|
         partner.created_at.strftime("%b %d, %Y")
       end

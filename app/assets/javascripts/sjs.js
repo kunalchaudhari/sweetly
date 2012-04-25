@@ -1,7 +1,7 @@
 $(function(){
   $('.fullname').watermark("Fullname");
   $('.emailtext').watermark("Email");
-  $('.zipcode').watermark("Zipcode");
+  $('.country').watermark("Country");
   $('.messagetext').watermark("Message");
   $('.address').watermark("Address");
   $('#partner_submit').on('click', function(event){
