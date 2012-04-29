@@ -33,6 +33,7 @@ Sweetly::Application.routes.draw do
   match 'reload_showcase(/:id)' => 'home#reload_showcase'
   match 'models' => 'home#models'
   match 'story' => 'home#story'
+  match 'materials' => 'home#materials'
   # first created -> highest priority.
 
   # Sample of regular route:
