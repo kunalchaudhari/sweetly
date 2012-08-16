@@ -1,9 +1,9 @@
 module Sweetly
   module VERSION
-    MAJOR = 1
+    MAJOR = 0
     MINOR = 0
-    TINY  = 0
-    PRE   = "beta"
+    TINY  = 9
+    PRE   = nil
 
     STRING = [MAJOR, MINOR, TINY, PRE].compact.join('.')
   end
