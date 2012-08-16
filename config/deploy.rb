@@ -1,40 +1,27 @@
-require File.expand_path('../cap_db', __FILE__)
 require "bundler/capistrano"
 
+load "config/recipes/base"
+load "config/recipes/apache2"
+load "config/recipes/mysql"
+load "config/recipes/unicorn"
+load "config/recipes/check"
+
+server "178.79.166.34", :web, :app, :db, :primary => true
+
 set :application, "sweetly"
-set :repository,  "git@github.com:kunalchaudhari/sweetly.git"
-
-set :user, :app
+set :user, "app"
 set :use_sudo, false
+#set :deploy_via, :remote_cache
+set :default_environment, { 'PATH' => "/home/app/.rbenv/shims:/home/app/.rbenv/bin:$PATH" }
 
-set :port, 30000
-
-#set :default_environment, {
-  #'PATH' => "/home/app/.rbenv/shims:/home/app/.rbenv/bin:$PATH"
-#}
-
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
-
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
 set :scm, :git
+set :repository,  "git@github.com:kunalchaudhari/#{application}.git"
+set :branch, "master"
+
+default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-role :app, "192.168.1.18"
-role :web, "192.168.1.18"
-role :db,  "192.168.1.18", :primary => true
+set :bundle_cmd, "#{release_path}/bin/bundle"
+set :rake, "#{release_path}/bin/rake"
 
-namespace :deploy do
-  #desc "Installs required gems binstubs"
-  #task :gems, :roles => :app do
-    #run "cd #{current_path} && bundle install --binstubs"
-  #end
-  
-  desc "Precompile assets"
-  task :precompile_assets do
-    run "cd #{current_path} && bundle exec rake assets:precompile"
-  end
-end
+after "deploy", "deploy:cleanup" # keep only the last 5 releases
