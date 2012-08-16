@@ -15,5 +15,9 @@
 /tmp
 .DS_Store
 
-config/database.yml
+/config/database.yml
+/config/database.example.yml
+/config/deploy
+/products
+/pics
 .sass-cache
