@@ -1,85 +1,39 @@
 <div id="primary">
 	<header>
 		<h1 id="what-is">
-			<span>Simple, stylish and designer handmade jewelry</span> <br /><label>created by Sweetly empowered rural women</label>
+			<span>Handmade jewelry at wholesale price.</span> <br /><label>(made in India at design centres in villages of Gujarat.)</label>
 		</h1>
 	</header> <!-- #what-is -->
-  <section id="shop-learn-involve">
-  <a id="shop" href="<%= showcase_path %>" >
-      <%= image_tag "model/1.png" %>
-      <h3>Browse Products</h3>
-    </a>
-    <a id="learn" href="<%= designers_path %>" class="second">
-      <%= image_tag "designer/250/1.png" %>
-      <h3>Meet Designers</h3>
-    </a>
-    <a id="involve" href="<%= partners_path %>" class="last">
-      <%= image_tag "getinvolve.png" %>
-      <h3>Partner with us</h3>
-    </a>
-    <div class="learn-div">
-      <%= image_tag "up-arrow.png" %>
-      Meet our Designers
-    </div>
-    <div class="involve-div">
-      <%= image_tag "up-arrow.png" %>
-      Maximize your gains while doing Business for Good.
-    </div>
-    <div class="shop-div">
-      <%= image_tag "up-arrow.png" %>
-      Browse wide range of beautiful handmade jewelry
-    </div>
-    <div class="clear">
+	<section id="beatiful-creations">
+    <div>
+      <a href="<%= showcase_path %>" >
+        <%= image_tag "jewelry/11.jpg", :width => "150" %>
+        <%= image_tag "jewelry/2.jpg", :width => "150" %>
+        <%= image_tag "jewelry/3.jpg", :width => "150" %>
+        <%= image_tag "jewelry/4.jpg", :width => "150" %>
+        <%= image_tag "jewelry/5.jpg", :width => "150" %>
+        <%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
+        <%= image_tag "jewelry/7.jpg", :width => "150" %>
+        <%= image_tag "jewelry/8.jpg", :width => "150" %>
+        <%= image_tag "jewelry/9.jpg", :width => "150" %>
+        <%= image_tag "jewelry/10.jpg", :width => "150" %>
+        <%= image_tag "jewelry/12.jpg", :width => "150" %>
+        <%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
+        <div class="clear"></div>
+      </a>
     </div>
   </section>
 </div>
 
 <aside id="whatwedo">
-<p>Sweetly provides <span>design training</span>, <span>raw materials</span>, and <span>knowledge resources</span> to Rural Women in <a href="http://en.wikipedia.org/wiki/Dang_district" target="_BLANK">Dangs District, Gujarat, India</a> to enable them make beautiful handmade jewelery and markets these beautiful products <br />globally thru <a href="<%= showcase_path %>">Sweetly Web Store</a>, <a href="<%= partners_path %>">Community events</a>, and <a href="<%= partners_path %>">Sweetly partners.</a></p>
+  Sweetly works with organizations, community groups, students groups, and individuals who retail or resell our products. Our jewelry are made in villages. We have two design centres in &mdash;<a href="http://en.wikipedia.org/wiki/Dang_district" target="_BLANK">Sajjupada, Dangs</a> and <a href="http://en.wikipedia.org/wiki/Mandvi_(Surat)" target="_BLANK">Kharoli, Surat</a>&mdash; Gujarat, India. <br /><a href="<%= showcase_path %>">Explore</a> the wide range of handmade jewelry and <a href="<%= partners_path %>">partner with us</a> to get very good returns.
 </aside>
-<section id="beatiful-creations">
-  <a href="<%= designers_path %>">Beautiful creations by empowered women</a>
-  <div>
-    <a href="<%= showcase_path %>" >
-      <%= image_tag "jewelry/11.jpg", :width => "150" %>
-      <%= image_tag "jewelry/2.jpg", :width => "150" %>
-      <%= image_tag "jewelry/3.jpg", :width => "150" %>
-      <%= image_tag "jewelry/4.jpg", :width => "150" %>
-      <%= image_tag "jewelry/5.jpg", :width => "150" %>
-      <%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
-      <%= image_tag "jewelry/7.jpg", :width => "150" %>
-      <%= image_tag "jewelry/8.jpg", :width => "150" %>
-      <%= image_tag "jewelry/9.jpg", :width => "150" %>
-      <%= image_tag "jewelry/10.jpg", :width => "150" %>
-      <%= image_tag "jewelry/12.jpg", :width => "150" %>
-      <%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
-      <div class="clear"></div>
-    </a>
-  </div>
-</section>
-<div id="awards-and-news">
-	<section class="awards">
-		<h1>Awards and Recognitions</h1>
-		<div>
-			<%= image_tag "news/youthwing.jpg", :width => 120 %>
-			<%= image_tag "news/wib.jpg", :width => 130 %>
-			<%= image_tag "news/HarvardInnovationChallenge.jpg", :width => 100 %>
-		</div>
-	</section>
-	<section class="news">
-		<h1>Featured in</h1>
-		<ul>
-			<li><%= image_tag "news/amlogo.gif", :width => 200 %></li>
-			<li><%= image_tag "news/weekend.jpg", :width => 150, :class => "weekend" %></li>
-			<li><%= image_tag "news/et.png", :width => 200 %></li>
-			<li><%= image_tag "news/gujarat.jpg", :width => 200 %></li>
-			<div class="clear"></div>
-		</ul>
-	</section>
-	<div class="clear"></div>
-</div>
 <div class="centxt ft-btn">
   <a href="<%= showcase_path %>" class="button">
-    <span>Showcase</span>
+    <span>See our products</span>
+	</a>
+	&nbsp;&nbsp;and&nbsp;&nbsp;
+	<a href="<%= partners_path %>" class="button parnters_button">
+    <span>Partner with us to get them</span>
 	</a>
 </div>

@@ -1,71 +1,9 @@
 <footer>
   <div id="ft">
-    <div class="worknplay">
-      <h1>Watch the different colors of Sweetly</h1>
-      <ul class="videos">
-        <li>
-          <a href="http://www.youtube.com/embed/-M3c8ggq_Yo?autoplay=1" class="youtube iframe">
-            <%= image_tag "doc.png" %>
-            <%= image_tag "play.png", :width => 32, :class => "play-btn" %>
-            <h2>Documentary</h2>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.youtube.com/embed/RhsKRDbkHME?autoplay=1" class="youtube iframe">
-            <%= image_tag "campfires.png" %>
-            <%= image_tag "play.png", :width => 32, :class => "play-btn" %>
-            <h2>Sweetly Campfires</h2>
-          </a>
-        </li>
-        <li>
-            <a href="http://www.youtube.com/embed/OEiRvEQQQp8?autoplay=1" class="youtube iframe">
-                <%= image_tag "roadjourney.png" %>
-                <%= image_tag "play.png", :width => 32, :class => "play-btn" %>
-                <h2>Road Journey in Dangs</h2>
-            </a>
-        </li>
-        <li class="last">
-            <a href="http://www.youtube.com/embed/bLWRh9HSFzk?autoplay=1" class="youtube iframe">
-                <%= image_tag "kuntaben-intro.png" %>
-                <%= image_tag "play.png", :width => 32, :class => "play-btn" %>
-                <h2>Jewerly Maker</h2>
-            </a>
-        </li>
-          <div class="clear"></div>
-      </ul>	<!-- .videos -->
-    </div> <!-- .workandplay -->
     <div class="whatyoucando-cont-cont">
     </div>
     <div class="whatyoucando-cont">
         <div class="whatyoucando">
-            <div class="points-container">
-                <ul class="points">
-                    <li>
-                        <%= link_to "Become a Valued Wholesale Partner", partners_path %> &mdash; Purchase products at discounted price for resale in your store.
-                    </li>
-                    <li>
-                        <%= link_to "Host a Sweetly Jewelry Store", partners_path %> &mdash;  Sale our beautiful designs without the large investment a shop requires.
-                    </li>
-                    <li>
-                    <a href="<%= showcase_path %>">Browse Products</a> &mdash; Find more info on products.
-                    </li>
-                    <li>
-                        <% @subscription = Subscription.new %>
-                        <%= render :partial => "subscriptions/form", :locals => { :subscription => @subscription } %>
-                    </li>
-                </ul>
-            </div> <!-- .points-container -->
-            <div class="keepintouch">
-                <ul class="touch">
-                    <li>
-                        <h2><a href="http://sweetly.in/365">Sweetly365 - Our Blog</a></h2>
-                        <div>
-                            <script src="http://feeds.feedburner.com/Sweetly365?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/Sweetly365"></a><br/>Powered by FeedBurner</p> </noscript>
-                        </div>
-                    </li>
-                </ul>
-            </div> <!-- .keepintouch -->
-            <div class="clear"></div>
             <ul class="terms">
                 <li class="social">
                     Follow us on <a href="https://twitter.com/sweetlyco">twitter</a>, <a href="https://www.facebook.com/sweetly.co">facebook</a> and <a href="https://plus.google.com/102392277339992057092/posts">google plus</a>
@@ -83,7 +21,7 @@
         </div> <!-- whatyoucando -->
     </div>
     <div class="point10">
-        <%= image_tag "p10logo.png", :width => 100 %>
+        A venture by <br/><a href="http://point10.co"><%= image_tag "http://point10.co/echai/wp-content/themes/echai/images/logo_new.png" %></a>
     </div> <!-- .point10 -->
   </div> <!-- #ft -->
 </footer>
