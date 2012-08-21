@@ -8,8 +8,8 @@ Sweetly::Application.configure do
     domain: "sweetly.co",
     authentication: "login",
     enable_starttls_auto: true,
-    user_name: <%= smtp_email %>,
-    password: <%= smtp_password %>
+    user_name: "<%= smtp_email %>",
+    password: "<%= smtp_password %>"
   }
   # Settings specified here will take precedence over those in config/application.rb
 
