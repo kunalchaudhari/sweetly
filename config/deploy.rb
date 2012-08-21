@@ -4,6 +4,7 @@ load "config/recipes/base"
 load "config/recipes/apache2"
 load "config/recipes/mysql"
 load "config/recipes/unicorn"
+load "config/recipes/production"
 load "config/recipes/check"
 
 server "178.79.166.34", :web, :app, :db, :primary => true
