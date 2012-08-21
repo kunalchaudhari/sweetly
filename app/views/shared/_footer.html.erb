@@ -1,24 +1,26 @@
 <footer>
   <div id="ft">
-    <div class="whatyoucando-cont-cont">
-    </div>
     <div class="whatyoucando-cont">
-        <div class="whatyoucando">
-            <ul class="terms">
-                <li class="social">
-                    Follow us on <a href="https://twitter.com/sweetlyco">twitter</a>, <a href="https://www.facebook.com/sweetly.co">facebook</a> and <a href="https://plus.google.com/102392277339992057092/posts">google plus</a>
-                </li>
-                <li>
-                    <%= link_to "Terms & Conditions", terms_path %>
-                </li>
-                <li>
-                    <%= link_to "Privacy Policy", privacy_path %>
-                </li>
-                <li class="last">
-                    <%= link_to "Contact us", contact_path %>
-                </li>
-            </ul> <!-- terms -->
-        </div> <!-- whatyoucando -->
+      <div class="whatyoucando">
+        <ul class="terms">
+          <li class="social">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sweetly.co" data-text="Sweetly - handmade jewelry at wholesale price (made in India.)" data-via="sweetlyco" data-hashtags="handmade">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </li>
+          <li>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=489240214437077";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://www.facebook.com/Sweetly.co" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+          </li>
+          <div class="clear"></div>
+        </ul> <!-- terms -->
+      </div> <!-- whatyoucando -->
     </div>
     <div class="point10">
         A venture by <br/><a href="http://point10.co"><%= image_tag "http://point10.co/echai/wp-content/themes/echai/images/logo_new.png" %></a>

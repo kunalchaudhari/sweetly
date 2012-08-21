@@ -340,25 +340,19 @@ h1.title {
 
   .terms {
     margin: 0 auto;
-    width: 450px;
+    width: 185px;
     padding: 10px;
     text-align: center;
+
     li {
-      display: none;
-      line-height: 15px;
+      float: left;
     }
+
     li.last{
       border-right: 0 none;
     }
 
-    li.social{
-      display: block;
-      padding-top: 5px;
-      font-size: 14px;
-      font-weight: bold;
-      a {
-        border-bottom: double 3px;
-      }
+    li.social {
     }
   }
 
