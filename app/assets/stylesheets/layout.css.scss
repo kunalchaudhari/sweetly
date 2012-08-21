@@ -339,21 +339,20 @@ h1.title {
   margin-top: 50px;
 
   .terms {
-    margin: 0 auto;
-    width: 185px;
     padding: 10px;
-    text-align: center;
+    width: 100%;
 
     li {
       float: left;
+      text-align: right;
+      width: 50%;
     }
 
     li.last{
       border-right: 0 none;
+      text-align: left;
     }
 
-    li.social {
-    }
   }
 
   .point10 {
