@@ -4,7 +4,6 @@ environment: production
 address: 0.0.0.0
 port: 5000
 timeout: 30
-worker_processes: <%= thin_workers %>
 log: <%= thin_log %>
 pid: <%= thin_pid %>
 max_conns: 1024

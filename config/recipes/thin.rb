@@ -2,7 +2,6 @@ set_default(:thin_user) { user }
 set_default(:thin_pid) { "#{current_path}/tmp/pids/thin.pid" }
 set_default(:thin_config) { "#{shared_path}/config/thin.yml" }
 set_default(:thin_log) { "#{shared_path}/log/thin.log" }
-set_default(:thin_workers, 2)
 
 namespace :thin do
   desc "Setup thin initializer and app configuration"
