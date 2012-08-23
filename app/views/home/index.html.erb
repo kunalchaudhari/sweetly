@@ -1,30 +1,24 @@
 <div id="primary">
-	<header>
-		<h1 id="what-is">
-			<span>Handmade jewelry at wholesale price.</span> <br /><label>(made in India at design centres in villages of Gujarat.)</label>
-		</h1>
-	</header> <!-- #what-is -->
-	<section id="beatiful-creations">
-    <div>
-      <a href="<%= showcase_path %>" >
-        <%= image_tag "jewelry/11.jpg", :width => "150" %>
-        <%= image_tag "jewelry/2.jpg", :width => "150" %>
-        <%= image_tag "jewelry/3.jpg", :width => "150" %>
-        <%= image_tag "jewelry/4.jpg", :width => "150" %>
-        <%= image_tag "jewelry/5.jpg", :width => "150" %>
-        <%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
-        <%= image_tag "jewelry/7.jpg", :width => "150" %>
-        <%= image_tag "jewelry/8.jpg", :width => "150" %>
-        <%= image_tag "jewelry/9.jpg", :width => "150" %>
-        <%= image_tag "jewelry/10.jpg", :width => "150" %>
-        <%= image_tag "jewelry/12.jpg", :width => "150" %>
-        <%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
-        <div class="clear"></div>
-      </a>
-    </div>
-  </section>
+	<h1 class="headline">
+		<span>Handmade jewelry at wholesale price.</span> <br /><label>(made in India at design centres in villages of Gujarat.)</label>
+	</h1>
+  <div class="container">
+    <a href="<%= showcase_path %>">
+      <%= image_tag "jewelry/11.jpg", :width => "150" %>
+      <%= image_tag "jewelry/2.jpg", :width => "150" %>
+      <%= image_tag "jewelry/3.jpg", :width => "150" %>
+      <%= image_tag "jewelry/4.jpg", :width => "150" %>
+      <%= image_tag "jewelry/5.jpg", :width => "150" %>
+      <%= image_tag "jewelry/6.jpg", :width => "150", :class => "last" %>
+      <%= image_tag "jewelry/7.jpg", :width => "150" %>
+      <%= image_tag "jewelry/8.jpg", :width => "150" %>
+      <%= image_tag "jewelry/9.jpg", :width => "150" %>
+      <%= image_tag "jewelry/10.jpg", :width => "150" %>
+      <%= image_tag "jewelry/12.jpg", :width => "150" %>
+      <%= image_tag "jewelry/13.jpg", :width => "150", :class => "last" %>
+    </a>
+  </div>
 </div>
-
-<aside id="whatwedo">
+<p class="container paragraph double-border width-980">
   Sweetly works with organizations, community groups, students groups, and individuals who retail or resell our products. Our jewelry are made in villages. We have two design centres in &mdash;<a href="http://en.wikipedia.org/wiki/Dang_district" target="_BLANK">Sajjupada, Dangs</a> and <a href="http://en.wikipedia.org/wiki/Mandvi_(Surat)" target="_BLANK">Kharoli, Surat</a>&mdash; Gujarat, India. <br /><a href="<%= showcase_path %>">Explore</a> the wide range of handmade jewelry and <a href="<%= partners_path %>">partner with us</a> to get very good returns.
-</aside>
+</p>

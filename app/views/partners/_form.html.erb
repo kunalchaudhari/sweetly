@@ -2,19 +2,19 @@
 	<%= form_for(@partner, :remote => true, :html => { :id => "partner_form"}) do |f| %>
 		<div class="message hide"></div>
 		
-    <div class="field email">
+    <div class="field">
 	    <%= f.text_field :fullname, :class => "fullname"  %>
 	  </div>
-	  <div class="field email">
+	  <div class="field">
 	    <%= f.text_field :email, :class => "emailtext"  %>
 	  </div>
-    <div class="field email">
+    <div class="field">
       <%= f.text_area :address, :class => "address", :rows => "4" %>
     </div>
 	  <div class="field">
 	    <%= f.text_field :country, :class => "country"  %>
 	  </div>
-    <div class="field email">
+    <div class="field">
       <%= f.text_area :message, :class => "messagetext", :rows => "8" %>
     </div>
 	  <div class="actions">

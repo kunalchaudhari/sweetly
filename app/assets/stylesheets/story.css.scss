@@ -42,7 +42,8 @@
   }
 
   .container {
-    @include center-980;
+    width: 980px;
+    margin: 0 auto;
     min-height: 600px;
   }
 
@@ -146,8 +147,8 @@
         img.tenth {
           top: -220px;
           left: 660px;
-          @include box-shadows(0, 0, 10px, #333);
-          @include rounded-corners(2px);
+          @include box-shadow(0 0 10px #333);
+          @include border-radius(2px);
         }
 
       }
@@ -171,15 +172,15 @@
       height: 120px;
       font-weight: bold;
       color: #871B35;
-      @include rounded-corners(130px);
-      @include add-transition-box-shadows(0.5s,ease-out);
+      @include border-radius(130px);
+      @include transition (box-shadow 0.5s ease-out);
       border: solid 8px lighten(#ccc, 10%);
       background-color: #fff;
       float: right;
       margin-right: -72px;
 
       &:hover {
-        @include box-shadows(0, 0, 10px, #999);
+        @include box-shadow(0 0 10px #999);
       }
 
       span {
