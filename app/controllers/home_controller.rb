@@ -1,19 +1,9 @@
 class HomeController < ApplicationController
   before_filter :authenticate_admin_user!, :only => [:reload_showcase]
 
-  def partner
-    @partner = Partner.new
-    @partner.partnertype = "Wholesale Partner"
-  end
-
   def partners
     @partner = Partner.new
     @partner.partnertype = "Community Partner"
-  end
-
-  def sjs
-    @partner = Partner.new
-    @partner.partnertype = "I want to Host SJS"
   end
 
   def goodwillband
