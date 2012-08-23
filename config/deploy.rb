@@ -4,7 +4,8 @@ load "config/recipes/base"
 load "config/recipes/nginx"
 load "config/recipes/mysql"
 load "config/recipes/unicorn"
-load "config/recipes/production"
+load "config/recipes/thin"
+load "config/recipes/production" #setup production.rb - task to set SMTP settings
 load "config/recipes/check"
 
 server "178.79.166.34", :web, :app, :db, :primary => true
