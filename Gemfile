@@ -16,7 +16,8 @@ gem 'jquery-rails'
 gem 'activeadmin'
 
 # Use unicorn as the web server
-gem 'unicorn'
+# gem 'unicorn'
+gem 'thin'
 
 # Deploy with Capistrano
 gem 'capistrano'
