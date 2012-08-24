@@ -2,46 +2,12 @@
   <header>
     <h2 class="headline">Here are some of classic products from our designers</h2>
   </header> <!-- #what-is -->
-  <ul class="models-ul">
-    <li>
-      <%= image_tag "models/1.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/2.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/3.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/4.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/6.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/7.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/8.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/10.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/12.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/13.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/14.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/15.jpg", :width => "200" %>
-    </li>
-    <li>
-      <%= image_tag "models/16.jpg", :width => "200" %>
-    </li>
+  <ul class="left">
+    <% for i in 1..16 %>
+      <li class="four columns" style="height: 350px;">
+        <%= image_tag "models/#{i}.jpg", :width => "200" %>
+      </li>
+    <% end %>
     <div class="clear"></div>
   </ul>
 </div>

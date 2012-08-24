@@ -5,96 +5,74 @@
         <span>Become a Sweetly Partner and Do Business for Good.</span>
       </h1>
     </header> <!-- #what-is -->
-    <p class="desc">Let’s work together to create beautiful world. Sweetly works with organizations, community groups, students groups, and individuals who retail or resell our products and get very good returns.</p>
-    <section class="partner-adv">
+    <p class="para2">Let’s work together to create beautiful world. Sweetly works with organizations, community groups, students groups, and individuals who retail or resell our products and get very good returns.</p>
+    <section class="partner-op">
       <a href="#partner-faq" class="partner-faq-link">Partner FAQ</a>
-      <div class="first">
-        <ul>
-          <li class="blue">
-            <a class="partnerbox" href="#become-a-partner">
-              <%= image_tag "wholesale.png" %>
-              <div>
-                <h2>Become a Official Sweetly Retailer.</h2>
-                <div class="left">
-                  You have a retail store and want to introduce new exclusive product line for your customers to keep them more engaged with your offerings and increase your margins.
-                  <span>Become a Partner</span>
-                </div>
-                <div class="right">
-                  <ol>
-                    <li>
-                      Get 50% discounts on your order.
-                    </li>
-                    <li>
-                      Free shipping at your place.
-                    </li>
-                    <li>
-                      Promotional material.
-                    </li>
-                  </ol>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </a>
+      <a class="partnerbox blue" href="#become-a-partner">
+        <%= image_tag "wholesale.png" %>
+        <h2 class="headline">Become a Official Sweetly Retailer.</h2>
+        <p class="seven columns alpha omega">
+          You have a retail store and want to introduce new exclusive product line for your customers to keep them more engaged with your offerings and increase your margins.
+          <span>Become a Partner</span>
+        </p>
+        <ol class="left four columns omega">
+          <li>
+            Get 50% discounts on your order.
           </li>
-          <li class="orange">
-            <a class="partnerbox" href="#become-a-partner">
-              <%= image_tag "sjs.png" %>
-              <div>
-                <h2>Host a Community Sale.</h2>
-                <div class="left">
-                  You are a Community or Student Group having an upcoming event and want to cover up the organizing costs or maximize returns. Join Sweetly to make your event successful.
-                  <span>Become a Partner</span>
-                </div>
-                <div class="right">
-                  <ol>
-                    <li>
-                      Get products without large investment.
-                    </li>
-                    <li>
-                      Earn 25% per product.
-                    </li>
-                    <li>
-                      Return unsold inventory at no cost.
-                    </li>
-                  </ol>
-                </div>
-                <div class="clear">
-                </div>
-              </div>
-            </a>
+          <li>
+            Free shipping at your place.
           </li>
-          <li class="green">
-            <a class="partnerbox" href="#become-a-partner">
-              <%= image_tag "socialgood.png" %>
-              <div>
-                <h2>Raise funds for Social Good.</h2>
-                <div class="left">
-                  Want to set-up computer center at your village or want to support local charity but do not have financial support to do. Join Sweetly to double the impact and raise funds.
-                  <span>Become a Partner</span>
-                </div>
-                <div class="right">
-                  <ol>
-                    <li>
-                      Get products at very low cost and resell in your community.
-                    </li>
-                    <li>
-                      Run your campaign at Sweetly.co/campaigns.
-                    </li>
-                  </ol>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </a>
+          <li>
+            Promotional material.
           </li>
-        </ul>
-      </div>
+        </ol>
+      </a>
+      <a class="partnerbox orange" href="#become-a-partner">
+        <%= image_tag "sjs.png" %>
+        <div>
+          <h2 class="headline">Host a Community Sale.</h2>
+          <P class="seven columns alpha omega">
+            You are a Community or Student Group having an upcoming event and want to cover up the organizing costs or maximize returns. Join Sweetly to make your event successful.
+            <span>Become a Partner</span>
+          </P>                
+          <ol class="left four columns omega">
+            <li>
+              Get products without large investment.
+            </li>
+            <li>
+              Earn 25% per product.
+            </li>
+            <li>
+              Return unsold inventory at no cost.
+            </li>
+          </ol>
+        </div>
+      </a>
+      <a class="partnerbox green" href="#become-a-partner">
+        <%= image_tag "socialgood.png" %>
+        <div>
+          <h2 class="headline">Raise funds for Social Good.</h2>
+          <P class="seven columns alpha omega">
+            Want to set-up computer center at your village or want to support local charity but do not have financial support to do. Join Sweetly to double the impact and raise funds.
+            <span>Become a Partner</span>
+          </P>
+          <ol class="left four columns omega">
+            <li>
+              Get products at very low cost and resell in your community.
+            </li>
+            <li>
+              Run your campaign at Sweetly.co/campaigns.
+            </li>
+          </ol>
+        </div>
+      </a>
     </section>
   </article>
   <article class="our_partners sixteen columns">
     <header>
       <h1 class="headline">Meet our Valuable Partners</h1>
     </header>
-    <div class="row">
+    <div class="row left">
       <div class="first eight columns alpha">
         <div class="row">
           <div class="eight columns alpha">
@@ -126,7 +104,7 @@
     </div>
   </article>
   <div class="clear"></div>
-  <div id="become-a-partner" class="row">
+  <div id="become-a-partner" class="row line left">
     <div class="partner-form eight columns aplha">
         <h5 class="headline">Fill your details to partner with us:</h5>
       <%= render :partial => 'partners/form' %>
