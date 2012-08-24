@@ -53,7 +53,7 @@ ul#topnav > li { display: inline; margin-left: 20px; text-align: left; font-size
 /* footer */
 .social { padding-top: 50px; text-align: left; }
 .social li:first-child { text-align: right; }
-.point10 { width: 200px; text-align: center; font-size: 10px; color: #ccc; margin:0 auto; padding: 50px 0;}
+.point10 { width: 200px; text-align: center; font-size: 10px; color: #ccc; margin:0 auto; padding: 50px 0; margin: 0 auto; }
 
 /* contact */
 .office { width: 460px; margin: 60px auto 100px auto; @include  box-shadow(0 0 10px #999); @include border-radius(5px); border: solid 1px #ccc; padding: 0px 40px 20px 40px; background-color: #f9f9f9; text-align: left; }
