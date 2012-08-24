@@ -45,8 +45,8 @@ h6.headline { font-size: 15px; }
 #masthead { padding: 25px 0px; text-align: left; margin: 0 -30px; }
 #masthead > nav { margin-left: 90px; }
 
-ul#topnav { text-align: right; padding-top: 10px; }
-ul#topnav > li { display: inline; margin-left: 20px; text-align: left; }
+ul#topnav { text-align: right; padding-top: 15px; }
+ul#topnav > li { display: inline; margin-left: 20px; text-align: left; font-size: 13px; }
 
 /* primary content */
 #primary { /*  @include linear-gradient(#fff,#f9f9f9);*/ /*  @include box-shadow(0 2px 3px #E2E2E2);*/ /*  height: 451px;*/ border-bottom: solid 1px #ccc; }
@@ -192,6 +192,7 @@ div.field textarea { width: 80%; }
       text-align: left; 
       padding-bottom: 20px;
       clear: left;
+      list-style-type: none;
 
       div {
         padding-top: 10px;
