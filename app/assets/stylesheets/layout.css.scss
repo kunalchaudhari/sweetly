@@ -30,9 +30,7 @@ h6.headline { font-size: 15px; }
 .para2 { font-size: 15px; padding: 10px 0; width: 850px; margin: 0 auto; }
 
 .border-d { border-bottom: 3px double #CCCCCC; }
-
 .watermark { color: #999; }
-
 .width-980 { width: 980px; }
 
 .hide { display: none; }
@@ -49,267 +47,90 @@ ul#topnav { text-align: right; padding-top: 15px; }
 ul#topnav > li { display: inline; margin-left: 20px; text-align: left; font-size: 13px; }
 
 /* primary content */
-#primary { /*  @include linear-gradient(#fff,#f9f9f9);*/ /*  @include box-shadow(0 2px 3px #E2E2E2);*/ /*  height: 451px;*/ border-bottom: solid 1px #ccc; }
+#primary { border-bottom: solid 1px #ccc; }
 #primary > h1.headline { padding: 10px 0 45px 0; }
 
-
-/* footer
-================================================== */
-.social { padding-top: 50px; text-align: left; } 
+/* footer */
+.social { padding-top: 50px; text-align: left; }
 .social li:first-child { text-align: right; }
 .point10 { width: 200px; text-align: center; font-size: 10px; color: #ccc; margin:0 auto; padding: 50px 0;}
 
-/* contact
-================================================== */
+/* contact */
 .office { width: 460px; margin: 60px auto 100px auto; @include  box-shadow(0 0 10px #999); @include border-radius(5px); border: solid 1px #ccc; padding: 0px 40px 20px 40px; background-color: #f9f9f9; text-align: left; }
 
-/* partners
-================================================== */
-.partner-op {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 750px;
-  margin: 0 auto;
-
-  a.partnerbox {
-    display: block;
-    color: #fff;
-    height: 250px;
-    position: relative;
-    margin-bottom: 50px;
-
-    img {
-      position: absolute;
-      left: -50px;
-      top: -25px;
-      width: 140px;
+/* partners */
+.partner-op { padding-top: 20px; padding-bottom: 20px; width: 750px; margin: 0 auto;
+  a.partnerbox { display: block; color: #fff; height: 250px; position: relative; margin-bottom: 50px;
+    img { position: absolute; left: -50px; top: -25px; width: 140px; }
+    h2 { font-weight: normal; padding-bottom: 10px; padding-top: 40px; }
+    p { margin-top: 10px; font-size: 16px; line-height: 24px; padding: 5px 10px 15px 55px; }
+    ol { border-left: dashed 1px #ccc; padding: 5px 0; margin-top: 10px;
+      li { padding-bottom: 10px; margin-left: 35px; font-size: 13px; }
     }
-
-    h2 {
-      font-weight: normal;
-      padding-bottom: 10px;
-      padding-top: 40px;
-    }
-
-    p {
-      margin-top: 10px;
-      font-size: 16px;
-      line-height: 24px;
-      padding: 5px 10px 15px 55px;
-    }
-    
-    ol {
-      border-left: dashed 1px #ccc;
-      padding: 5px 0;
-      margin-top: 10px;
-
-      li {
-        padding-bottom: 10px;
-        margin-left: 35px;
-        font-size: 13px;
-      }
-    }
-    
-    span {
-      font-size: 12px;
-      display: block;
-      width: 120px;
-      background-color: lighten(green, 10%);
-      margin: 25px auto 0 220px;
-      @include border-radius(3px);
-      padding: 1px 5px;
-      display: none;
-    }
-
-    &:hover {
-      span {
-        display: block;
-        @include box-shadow(0px 1px 1px #000);
-      }
-    }
+    span { font-size: 12px; display: block; width: 120px; background-color: lighten(green, 10%); margin: 25px auto 0 220px; @include border-radius(3px); padding: 1px 5px; display: none; }
+    &:hover { span { display: block; @include box-shadow(0px 1px 1px #000); } }
   }
 
-  a.blue {
-    background: transparent url("../assets/blue.png") left center no-repeat;
-    &:hover {
-      span {
-        background-color: lighten(#006be9, 13%);
-      }
-    }
+  a.blue { background: transparent url("../assets/blue.png") left center no-repeat; 
+    &:hover { span { background-color: lighten(#006be9, 13%); } } 
   }
 
-  a.orange {
-    background: transparent url("../assets/orange.png") left center no-repeat;
-    &:hover {
-      span {
-        background-color: lighten(#e55922, 13%);
-      }
-    }
+  a.orange { background: transparent url("../assets/orange.png") left center no-repeat; 
+    &:hover { span { background-color: lighten(#e55922, 13%); } } 
   }
 
-  a.green {
-    background: transparent url("../assets/green.png") left center no-repeat;
-  }
+  a.green { background: transparent url("../assets/green.png") left center no-repeat; }
 }
 
 a.partner-faq-link { position: fixed; top: 225px; right: 0px; padding: 5px 10px; border: solid 1px #CCC; @include box-shadow(0 0 2px #ccc); @include border-radius(3px 0px 0px 3px); background-color: #f9f9f9; border-right: 0 none; }
-
 .our_partners img { float: left; margin-left: -15px; margin-top: -15px;}
-
 div.que { padding-bottom: 5px; text-decoration: underline; }
 
-
-/* form
-================================================== */
+/* form */
 div.field { padding-bottom: 20px; }
 div.field input[type="text"],
 div.field textarea { padding: 5px; font-size: 15px; font-family: 'Open Sans', sans-serif; width: 70%; border: solid 1px #ccc; border-top: solid 1px #999; background-color: #f5f5f5; }
 div.field textarea { width: 80%; }
-/* about
-================================================== */
-.home-about {
-  background: #f2f2f2 url("/assets/noise.png") left top repeat;
 
-  .about {
-    width: 880px;
-    margin: 0 auto;
-    border-bottom: double 3px #ccc;
-    border-top: double 3px #ccc;
-    padding-bottom: 30px;
-
-    p {
-      padding-top: 20px;
-      line-height: 22px;
-      text-align: left;
-    }
+/* about */
+.home-about { background: #f2f2f2 url("/assets/noise.png") left top repeat;
+  .about { width: 880px; margin: 0 auto; border-bottom: double 3px #ccc; border-top: double 3px #ccc; padding-bottom: 30px;
+    p { padding-top: 20px; line-height: 22px; text-align: left; }
   }
-
-  .ourteam {
-    width: 900px;
-    margin: 0 auto;
-
-    li {
-      text-align: left; 
-      padding-bottom: 20px;
-      clear: left;
-      list-style-type: none;
-
-      div {
-        padding-top: 10px;
-        padding-left: 180px;
-
-        h2 {
-          padding-bottom: 15px;
-          font-size: 15px;
-
-          span {
-            font-size: 12px;
-            font-weight: normal;
-          }
+  .ourteam { width: 900px; margin: 0 auto;
+    li { text-align: left; padding-bottom: 20px; clear: left; list-style-type: none;
+      div { padding-top: 10px; padding-left: 180px;
+        h2 { padding-bottom: 15px; font-size: 15px;
+          span { font-size: 12px; font-weight: normal; }
         }
-
-        p {
-          font-size: 12px;
-          line-height: 19px;
-          padding-bottom: 7px;
-        }
+        p { font-size: 12px; line-height: 19px; padding-bottom: 7px; }
       }
-
-      img {
-        width: 150px;
-        float: left;
-      }
+      img { width: 150px; float: left; }
     }
   }
 }
 
-/* showcase
-================================================== */
-.product_photos {
-  width: 940px;
-  margin: 20px auto;
-  .photo {
-    margin-bottom: 5px;
-    margin-right: 5px;
-    display: block;
-    float: left;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 128px;
-    height: 150px;
-    width: 150px;
-    img {
-      border: solid 1px #ccc;
-      display: none;
-    }
+/* showcase */
+.product_photos { width: 940px; margin: 20px auto;
+  .photo { margin-bottom: 5px; margin-right: 5px; display: block; float: left; vertical-align: middle; text-align: center; font-size: 128px; height: 150px; width: 150px;
+    img { border: solid 1px #ccc; display: none; }
   }
 }
 
-.big_loader {
-  margin: 200px auto;
-  width: 200px;
-  text-align: center;
-}
-.showcase_promo {
-  margin-bottom: 2px;
-  font-size: 20px;
-  color: #333;
-  padding: 10px 0;
+.big_loader { margin: 200px auto; width: 200px; text-align: center; }
 
-  div.storenote {
-    font-size: 11px;
-    font-style: italic;
-    margin: 0 auto;
-    width: 940px;
-    text-align: center;
-    padding-top: 10px;
-  }
-  div.desc {
-    width: 940px;
-    margin: 0 auto;
-    border-bottom: double 3px #ccc;
-
-    h2 {
-      font-size: 35px;
-      font-family: 'Cambo', serif;
-      text-align: center;
-      padding-bottom: 10px;
+.showcase_promo { margin-bottom: 2px; font-size: 20px; color: #333; padding: 10px 0;
+  div.storenote { font-size: 11px; font-style: italic; margin: 0 auto; width: 940px; text-align: center; padding-top: 10px; }
+  div.desc { width: 940px; margin: 0 auto; border-bottom: double 3px #ccc;
+    h2 { font-size: 35px; font-family: 'Cambo', serif; text-align: center; padding-bottom: 10px; }
+    p { font-size: 15px; line-height: 28px; padding-top: 10px; width: 830px; margin: 0 auto;
+      a { cursor: pointer; &:hover { text-decoration: underline; } }
     }
 
-    p {
-      font-size: 15px;
-      line-height: 28px;
-      padding-top: 10px;
-      width: 830px;
-      margin: 0 auto;
+    button { @include button; font-size: 13px; padding: 4px 10px 5px; }
 
-      a {
-        cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    button {
-      @include button;
-      font-size: 13px;
-      padding: 4px 10px 5px;
-    }
-
-    .partner-form {
-      display: none;
-      margin-top: 30px;
-      padding-bottom: 30px;
-      border-top: solid 2px #000;
-      float: none;
-      padding-left: 0;
-      width: auto;
-      text-align: left;
-
-      div.field {
-        float: none;
-      }
+    .partner-form { display: none; margin-top: 30px; padding-bottom: 30px; border-top: solid 2px #000; float: none; padding-left: 0; width: auto; text-align: left;
+      div.field { float: none; }
     }
   }
 }
